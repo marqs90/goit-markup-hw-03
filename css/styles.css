@@ -100,7 +100,14 @@ body {
 /* Hero */
 
 .hero {
+	display: flex;
+	flex-direction: column;
 	background-color: var(--color-bcg-second);
+	padding-top: 200px;
+	padding-bottom: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
 }
 
@@ -111,12 +118,14 @@ body {
 	font-weight: 900;
 	line-height: 60px;
 	letter-spacing: 0.06em;
+	margin-bottom: 30px;
 }
 
 .btn-hero {
 	font-family: "Roboto" sans-serif;
 	color: var(--color-bcg-first);
 	background-color: var(--color-font-third);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border: none;
 	border-radius: 4px;
 	font-size: 16px;
@@ -187,7 +196,18 @@ body {
 /* Section Lorem*/
 
 .lorem {
+	margin-top: 94px;
 	background-color: var(--color-bcg-first);
+}
+
+.lorem-item {
+	max-width: 270px;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.lorem-item:last-child {
+	margin-right: 0;
 }
 
 .lorem-list {
@@ -199,6 +219,7 @@ body {
 	font-weight: 700;
 	line-height: 16px;
 	letter-spacing: 0.03em;
+	margin-bottom: 10px;
 }
 
 .lorem-text {
@@ -215,26 +236,48 @@ body {
 }
 
 .offer-title {
+	margin-top: 94px;
+	margin-bottom: 50px;
 	text-align: center;
 	font-size: 36px;
 }
 
 .offer-list {
-	text-align: center;
 	list-style: none;
+}
+.offer-item {
+	display: inline-block;
+	margin-right: 20px;
 }
 
 /* ourTeam */
 
 .team-list {
+	display: flex;
 	list-style: none;
 }
 
 .team {
 	text-align: center;
 	background-color: #f5f4fa;
+	padding-top: 94px;
+	padding-bottom: 94px;
+	margin-bottom: 0px;
 }
 
+.team-item {
+	background-color: var(--brand-color-white);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+	max-width: 270px;
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.team-item:last-child {
+	margin-right: 0;
+  }
 .team-title {
 	font-size: 36px;
 	font-weight: 700;
