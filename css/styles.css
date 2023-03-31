@@ -54,7 +54,6 @@ body {
 }
 
 .nav-list {
-	
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
@@ -71,7 +70,6 @@ body {
 	margin-right: 46px;
 	display: inline;
 }
-
 
 .nav-link:hover,
 .nav-link:focus,
@@ -155,17 +153,17 @@ body {
 	padding-bottom: 94px;
 	list-style: none;
 	display: flex;
-  	justify-content: space-around;
+	justify-content: space-around;
 }
 
+.porfolio-menu-item {
+}
 
-
-
-	height: 38px;
 .btn-submenu {
 	font-family: "Roboto" sans-serif;
 	text-align: center;
 	background-color: #f5f4fa;
+	min-height: 38px;
 	font-size: 16px;
 	font-weight: 500;
 	border: none;
@@ -182,6 +180,15 @@ body {
 
 /* Our Skills */
 
+.skills-list {
+	padding-bottom: 94px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	row-gap: 30px;
+	column-gap: 20px;
+}
+
 .skills-name {
 	font-size: 18px;
 	font-weight: 700;
@@ -191,6 +198,13 @@ body {
 
 .skills-list {
 	list-style: none;
+}
+
+.skills-description {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding: 20px 24px;
 }
 
 .skills-description-text {
@@ -317,15 +331,12 @@ body {
 /* Footer */
 
 .footer {
-	
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background-color: #2f303a;
-
 }
 
 .footer .logo {
-	
 	font-family: "Raleway", sans-serif;
 	font-size: 26px;
 	color: var(--color-bcg-first);
