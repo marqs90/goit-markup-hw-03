@@ -8,13 +8,38 @@
 	--color-bcg-second: #2f303a;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	background-color: var(--color-bcg-first);
 	font-family: "Roboto", sans-serif;
 	color: var(--color-font-first);
 }
 
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 15px;
+}
+
 /* Header, nav, logo */
+
+.header {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #ececec;
+}
+
+.navigation {
+	display: flex;
+}
 
 .logo {
 	font-family: "Raleway", sans-serif;
@@ -28,6 +53,9 @@ body {
 }
 
 .nav-list {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 	list-style: none;
 }
 
@@ -37,6 +65,10 @@ body {
 	font-weight: 500;
 	color: var(--color-font-first);
 }
+.nav-item {
+	margin-right: 46px;
+	display: inline;
+}
 
 .nav-link:hover,
 .nav-link:focus,
@@ -44,6 +76,10 @@ body {
 	color: var(--color-font-third);
 }
 
+.contact-item {
+	display: inline;
+	margin-right: 50px;
+}
 .contact-list {
 	list-style: none;
 }
@@ -64,7 +100,6 @@ body {
 /* Hero */
 
 .hero {
-	height: 600px;
 	background-color: var(--color-bcg-second);
 	text-align: center;
 }
@@ -106,7 +141,7 @@ body {
 }
 
 .portfolio-menu-item {
-	display: inline;
+	display: block;
 }
 
 .btn-submenu {
