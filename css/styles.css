@@ -34,7 +34,9 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 1px solid #ececec;
+}
+.header-line {
+	border-bottom: #ececec solid 1px;
 }
 
 .navigation {
@@ -57,7 +59,7 @@ body {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	list-style: none;
+	list-style-type: none;
 }
 
 .nav-link {
@@ -81,8 +83,13 @@ body {
 	display: inline;
 	margin-right: 50px;
 }
+
+.contact-item:last-child{
+	margin-right: 0;
+}
+
 .contact-list {
-	list-style: none;
+	list-style-type: none;
 }
 
 .contact-link {
@@ -101,9 +108,9 @@ body {
 /* Hero */
 
 .hero {
+	background-color: var(--color-bcg-second);
 	display: flex;
 	flex-direction: column;
-	background-color: var(--color-bcg-second);
 	padding-top: 200px;
 	padding-bottom: 200px;
 	display: flex;
@@ -163,6 +170,7 @@ body {
 	font-family: "Roboto" sans-serif;
 	text-align: center;
 	background-color: #f5f4fa;
+	padding: 0px 20px;
 	min-height: 38px;
 	font-size: 16px;
 	font-weight: 500;
@@ -345,14 +353,14 @@ body {
 .address-list {
 	padding-left: 0;
 	padding-top: 20px;
-	list-style: none;
+	 list-style-type: none;
 }
 
 .address-item {
 	color: var(--color-bcg-first);
 	font-size: 14px;
 	font-style: normal;
-	line-height: 24px;
+	line-height: 1.7em;
 	letter-spacing: 0.03em;
 }
 
